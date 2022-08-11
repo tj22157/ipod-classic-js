@@ -131,6 +131,7 @@ export const SpotifySDKProvider = ({ children }: Props) => {
   /** Fetch access tokens and, if successful, then set up the playback sdk. */
   const handleMount = useCallback(async () => {
     const { accessToken, refreshToken, isNew } = await SpotifyUtils.getTokens();
+   
     setIsMounted(true);
 
     if (accessToken && refreshToken) {

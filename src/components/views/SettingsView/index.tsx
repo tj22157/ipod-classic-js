@@ -86,6 +86,12 @@ const SettingsView = () => {
             label: `U2 Edition ${deviceTheme === 'u2' ? '(Current)' : ''}`,
             onSelect: () => setDeviceTheme('u2'),
           },
+          {
+            type: 'Action',
+            isSelected: deviceTheme === 'mnelia',
+            label: `mnelia ${deviceTheme === 'mnelia' ? '(Current)' : ''}`,
+            onSelect: () => setDeviceTheme('mnelia'),
+          },
         ],
         preview: PREVIEW.THEME,
       },

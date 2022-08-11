@@ -13,6 +13,7 @@ import {
   NowPlayingView,
   SettingsView,
   ViewOptions,
+  HomeKitView,
   WINDOW_TYPE,
 } from 'components/views';
 import {
@@ -60,6 +61,13 @@ const HomeView = () => {
         viewId: ViewOptions.games.id,
         component: () => <GamesView />,
         preview: PREVIEW.GAMES,
+      },
+      {
+        type: 'View',
+        label: 'HomeKit',
+        viewId: ViewOptions.games.id,
+        component: () => <HomeKitView />,
+        preview: PREVIEW.HOME_KIT,
       },
       {
         type: 'View',

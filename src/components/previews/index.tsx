@@ -4,6 +4,7 @@ import NowPlayingPreview from './NowPlayingPreview';
 import ServicePreview from './ServicePreview';
 import SettingsPreview from './SettingsPreview';
 import ThemePreview from './ThemePreview';
+import HomeKitPreview from './HomeKitPreview';
 
 export enum PREVIEW {
   MUSIC = 'music',
@@ -12,6 +13,7 @@ export enum PREVIEW {
   NOW_PLAYING = 'nowPlaying',
   SERVICE = 'service',
   THEME = 'theme',
+  HOME_KIT = 'homeKit',
 }
 
 export const Previews = {
@@ -21,4 +23,5 @@ export const Previews = {
   [PREVIEW.NOW_PLAYING]: () => <NowPlayingPreview />,
   [PREVIEW.SERVICE]: () => <ServicePreview />,
   [PREVIEW.THEME]: () => <ThemePreview />,
+  [PREVIEW.HOME_KIT]: () => <HomeKitPreview />,
 };

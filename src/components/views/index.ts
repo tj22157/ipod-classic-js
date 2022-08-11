@@ -14,6 +14,8 @@ export { default as PlaylistsView } from './PlaylistsView';
 export { default as SearchView } from './SearchView';
 export { default as SettingsView } from './SettingsView';
 export { default as SongsView } from './SongsView';
+export { default as HomeKitView } from './HomeKitView';
+
 
 export enum WINDOW_TYPE {
   SPLIT = 'SPLIT',
